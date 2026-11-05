@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +35,28 @@ body.light header,body.light nav,body.light footer{background:#ddd}
 body.light nav a{color:#171717}
 body.light .card,body.light .intro,body.light .letter,body.light .report,body.light .meme{background:white;color:#222;border-color:#ddd}
 body.light .caption{color:#444}
+
+/* FLOATING NEXT PAGE BUTTON */
+.next-page-btn{
+position:fixed;
+right:20px;
+bottom:20px;
+z-index:9999;
+background:#e50914;
+color:white;
+padding:14px 22px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+box-shadow:0 0 15px #e5091480;
+transition:.3s ease;
+}
+.next-page-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #e50914;
+}
+
 @media(max-width:600px){
 .gallery{grid-template-columns:1fr}
 section{padding:35px 5%}
@@ -131,8 +152,8 @@ nav a{display:inline-block}
 <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_1" title="Aadi video" allowfullscreen></iframe>
 </div>
 <div class="card">
-<h3>THE Ringtone of criminal </h3>
-<iframe src="https://youtube.com/watch?v=hgXI5gr9hQI&si=A0PQETKp0AK38g2J" title="Special footage" allowfullscreen></iframe>
+<h3>THE Ringtone of criminal</h3>
+<iframe src="https://www.youtube-nocookie.com/embed/hgXI5gr9hQI" title="Special footage" allowfullscreen></iframe>
 </div>
 </section>
 
@@ -200,6 +221,11 @@ Made with friendship, memes and unlimited bakchodi.<br><br>
 © 2026 AADI DOCUMENTARY<br>
 <small>This is a fictional comedy parody.</small></p>
 </footer>
+
+<!-- FLOATING NEXT PAGE BUTTON -->
+<a href="next.html" class="next-page-btn">
+NEXT PAGE →
+</a>
 
 <script>
 function toggleTheme(){
